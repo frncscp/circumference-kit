@@ -22,7 +22,7 @@ class Circumference_kit():
         try:
             self.r = ((self.x-self.h)**2+(self.y-self.k)**2)**.5
         except Exception as e:
-            print(f'{str(e)}.\nRecuerda instanciar todas las variables:\nh = {self.h}.\nk = {self.k}.\nx = {self.x}.\ny = {self.y}.')
+            print(f'{str(e)}.\nRemember to instantiate all variables:\nh = {self.h}.\nk = {self.k}.\nx = {self.x}.\ny = {self.y}.')
     def get_center(self): 
         #Asumiendo que el radio tiene pendiente 0
         self.h = self.x+self.r
@@ -98,7 +98,7 @@ class Circumference_kit():
             plt.plot(r_x, r_y, '--') #radio
             plt.xlim(graph_limit)
             plt.ylim(graph_limit)
-            plt.title(f'{self.formula()}\nOrigen: {self.fraction_valid(self.h), self.fraction_valid(self.k)}; Radio: {self.r}')
+            plt.title(f'{self.formula()}\nCenter: {self.fraction_valid(self.h), self.fraction_valid(self.k)}; Radius: {self.r}')
             plt.show()        
 
 
@@ -108,7 +108,7 @@ class Circumference_kit():
         y_constant = Fraction((y/2)**2).limit_denominator(10**6)
         actual_radius = abs(-r + x_constant + y_constant)
         if actual_radius == 0:
-          return f'La ecuación no corresponde a una circunferencia, dado que tiene radio 0.'
+          return f'The equation does not represent a circumference, since its radius equals zero.'
         #ax**2+cx+xct + by**2+dy+yct = -r + xct + yct
         x_factor_constant = Fraction((x_constant)**.5).limit_denominator(10**6)
         y_factor_constant = Fraction((y_constant)**.5).limit_denominator(10**6)
@@ -121,6 +121,6 @@ class Circumference_kit():
         return f'(x{x_operator}{x_factor_constant})² + (y{y_operator}{y_factor_constant})² = {actual_radius**2}'
 
 def graph_based_on_center_and_radius(h = 0, k = 0, x = 0, y = 0, r = 1, lim = 2):
-    circle = Circunferencia()
+    circle = Circumference_kit()
     circle.from_radius_points((h, k), (h+r, k))
     return circle.return_graph(lim = lim)
