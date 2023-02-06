@@ -1,11 +1,11 @@
 # circumference-kit
 It can:
 
-- Get radius and center from another variables.
+- Get radius and center from other variables.
 
 - Plot a circumference with:
-  *Radius's endpoints.
-  *Center and radius.
+ *Radius's endpoints.
+ *Center and radius.
 
 - Plots two circumference (with no radius or title) to visually see if they intersect.
 
