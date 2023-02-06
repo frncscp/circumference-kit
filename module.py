@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from fractions import Fraction
 
-class Circunferencia():
+class Circumference_kit():
     def __init__(self, h = None, k = None, x = None, y = None, r = None): 
         #las llamo con None para que existan las variables, luego con los métodos de clase se asignan su valor
         self.h = h
