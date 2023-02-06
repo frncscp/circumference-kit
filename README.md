@@ -17,4 +17,4 @@ It cannot:
 
 - Bake a cake.
 
-_from module import Circumference-kit, graph_based_on_center_and_radius_
+_from module import Circumference_kit, graph_based_on_center_and_radius_
