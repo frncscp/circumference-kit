@@ -1,15 +1,15 @@
 # circumference-kit
 It can:
 
-- Get radius and center from other variables.
+- Get the radius and center from other variables.
 
 - Plot a circumference with:
  
-    -Radius's endpoints.
+    -Radius' endpoints.
  
     -Center and radius.
 
-- Plots two circumference (with no radius or title) to visually see if they intersect.
+- Plots two circumference (with no radius or title) to visually observe if they intersect.
 
 - Converts a general equation to a circumference equation (if possible) and plots it
 
