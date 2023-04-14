@@ -9,7 +9,7 @@ It can:
  
     -Center and radius.
 
-- Plots two circumference (with no radius or title) to visually observe if they intersect.
+- Plots two circumferences (with no radius or title) to visually observe if they intersect.
 
 - Converts a general equation to a circumference equation (if possible) and plots it
 
