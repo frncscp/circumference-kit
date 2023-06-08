@@ -5,9 +5,9 @@ It can:
 
 - Plot a circumference with:
  
-    -Radius' endpoints.
+    - Radius' endpoints.
  
-    -Center and radius.
+    - Center and radius.
 
 - Plots two circumferences (with no radius or title) to visually observe if they intersect.
 
